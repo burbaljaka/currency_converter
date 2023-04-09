@@ -6,6 +6,7 @@ databases==0.7.0
 fastapi==0.95.0
 h11==0.14.0
 idna==3.4
+loguru==0.6.0
 Mako==1.2.4
 MarkupSafe==2.1.2
 numpy==1.24.2

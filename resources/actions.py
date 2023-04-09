@@ -17,4 +17,4 @@ async def base_rates_upload():
 @router.post("/convert/")
 async def convert(data: RateConvert):
     result = await RateManager.convert(data.dict())
-    return {"result": result}
+    return {"result": result} if result else {"error": "Cannot convert by requested conditions"}
